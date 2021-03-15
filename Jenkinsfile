@@ -23,7 +23,7 @@ pipeline {
                  script{
                         dir("terraform")
                         {
-                            git "https://github.com/sourabhsihare/Demo-Project.git"
+                            git branch: 'main', changelog: false, poll: false, url: 'https://github.com/sourabhsihare/Demo-Project.git'
                         }
                     }
                 }
